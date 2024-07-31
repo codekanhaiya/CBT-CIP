@@ -1,28 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Connectsphere</title>
 </head>
 
 <style>
-    .userList{
+    .userList {
         overflow-y: scroll;
         height: 300px;
         scrollbar-color: pink lightblue;
         scroll-behavior: smooth;
     }
+
+    .card {
+        border: none;
+    }
+
+    .lg {
+        position: relative;
+        text-align: center;
+        color: white;
+        font-size: 2em;
+        transition: 0.5s;
+        font-family: Arial, Helvetica, sans-serif;
+        text-shadow: 1px 1px 0 rgb(13 110 253), 0 2px 0 rgb(13 110 253),
+            0 3px 0 rgb(13 110 253), 0 4px 0 rgb(13 110 253),
+            0 5px 0 rgb(13 110 253), 0 6px 0 rgb(13 110 253),
+            2px 20px 30px rgba(0, 0, 0, 0.5);
+    }
 </style>
 
 <body>
-    <div class="container-md p-3 mb-2 mt-2 rounded bg-light-subtle text-primary-emphasis">
-        
-        <div class="card" style="width: 18rem;">
+    <div class="container-md p-3 mb-2 mt-2 rounded bg-light text-primary-emphasis">
+
+        <div class="card shadow-lg bg-body-tertiary rounded" style="width: max-content;">
             <div class="card-body">
-              <h5 class="card-title"><u>Connectsphere</u></h5>
+                <!-- <img width="80rem" src="img/logo.png" alt="CONNECTSPHERE"> -->
+                <h2 class="lg border-bottom border-primary border-2">CONNECTSPHERE</h2>
             </div>
         </div>
 
@@ -31,78 +51,84 @@
         <div class="row g-0 p-5">
             <div class="col-sm-6">
                 <div class="" style="width: 18rem;">
-                    <img width="80rem" src="css/img.png" class="rounded-circle" alt="...">
+                    <img width="80rem" src="img/img.png" class="rounded-circle shadow-lg bg-body-tertiary rounded"
+                        alt="...">
                     <div class="card-body border-start border-primary p-2">
-                      <h5 class="card-title">name</h5>
-                      <p class="card-text"><span>@</span>username</p>  
-                      <p class="card-text">email</p>
+                        <h5 class="card-title">name</h5>
+                        <p class="card-text"><span>@</span>username</p>
+                        <p class="card-text">email</p>
                     </div>
                 </div>
             </div>
             <div class="col-sm-6">
                 <div class="row">
-                    
-                    <div style="border: 2px solid gainsboro; padding: 10px;">
+
+                    <div class="border rounded border-primary border-1 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded">
                         <h3>For New Post: </h3>
-                                <!-- Button trigger modal -->
-                                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#commentModal">click here</button>
-                                <!-- Modal -->
-                                <div class="modal fade" id="commentModal">
-                                    <div class="modal-dialog">
-                                      <div class="modal-content">
-                                        <div class="modal-header">
-                                          <h1 class="modal-title fs-5" id="exampleModalLabel">New Post</h1>
-                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <form action="">
-                                                <div class="input-group flex-nowrap p-2">
-                                                    <input type="text" class="form-control" placeholder="Title" aria-describedby="addon-wrapping">
-                                                  </div>
-                                                <div class="input-group p-2">
-                                                    <textarea class="form-control" aria-label="With textarea" placeholder="Write here..."></textarea>
-                                                </div>                                                
-                                                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                                    <button type="submit" class="btn btn-outline-primary">submit</button>
-                                                </div>
-                                            </form>
-                                        </div>
-                                      </div>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                            data-bs-target="#commentModal">click here</button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="commentModal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-primary text-white">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">New Post</h1>
+                                        <button type="button" class="btn-close text-white" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
                                     </div>
-                                </div> 
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <div class="input-group flex-nowrap p-2">
+                                                <input type="text" class="form-control" placeholder="Title"
+                                                    aria-describedby="addon-wrapping">
+                                            </div>
+                                            <div class="input-group p-2">
+                                                <textarea class="form-control" aria-label="With textarea"
+                                                    placeholder="Write here..."></textarea>
+                                            </div>
+                                            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                                <button type="submit" class="btn btn-outline-primary">submit</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
                 </div>
             </div>
         </div>
-        
+
 
 
         <div class="row g-0">
-           
+
             <div class="col-sm-3">
                 <div class="card p-2 usernameList">
                     <div>
                         <div class="input-group mb-3">
                             <!-- <span class="input-group-text" id="basic-addon1"><i class="fa fa-search"></i></span> -->
-                            <input type="text" id="myInput" onkeyup="myFunction()" class="form-control" placeholder="search..." aria-label="search..." aria-describedby="basic-addon1">
+                            <input type="text" id="myInput" onkeyup="myFunction()" class="form-control"
+                                placeholder="search..." aria-label="search..." aria-describedby="basic-addon1">
                         </div>
                         <ul class="userList list-group" id="myUL">
                             <li class="list-group-item"><a href="#">Adele</a></li>
                             <li class="list-group-item"><a href="#">Agnes</a></li>
-                          
+
                             <li class="list-group-item"><a href="#">Billy</a></li>
                             <li class="list-group-item"><a href="#">Bob</a></li>
-                          
+
                             <li class="list-group-item"><a href="#">Calvin</a></li>
                             <li class="list-group-item"><a href="#">Christina</a></li>
                             <li class="list-group-item"><a href="#">Cindy</a></li>
                             <li class="list-group-item"><a href="#">Adele</a></li>
                             <li class="list-group-item"><a href="#">Agnes</a></li>
-                          
+
                             <li class="list-group-item"><a href="#">Billy</a></li>
                             <li class="list-group-item"><a href="#">Bob</a></li>
-                          
+
                             <li class="list-group-item"><a href="#">Calvin</a></li>
                             <li class="list-group-item"><a href="#">Christina</a></li>
                             <li class="list-group-item"><a href="#">Cindy</a></li>
@@ -115,10 +141,10 @@
             <div class="col-sm-9">
                 <div class="card post">
                     <div class="card-body">
-                      
-                        <div class="card mb-3">
+
+                        <div class="card mb-3 shadow p-3 mb-5 bg-body-tertiary rounded">
                             <div class="row g-0">
-                                <div class="col-md-4 p-5">
+                                <div class="col-md-4 p-2">
                                     <h5><span>@</span>Userame</h5>
                                     <p>Name</p>
                                     <div>
@@ -129,9 +155,26 @@
                                 <div class="col-md-8">
                                     <div class="card-body">
                                         <h5 class="card-title">Title Post</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins
+                                                ago</small></p>
                                     </div>
+                                </div>
+                            </div>
+                            <div class="d-flex border-bottom border-primary">
+                                <div class="bg-primary text-white p-2">Comments: </div>
+                            </div>
+                            <div class="card border-top m-3 comments">
+                                <div class="card-header">
+                                    <span class="text-primary">1} </span>Username
+                                </div>
+                                <div class="card-body">
+                                    <blockquote class="blockquote mb-0">
+                                        <p>A well-known quote, contained in a blockquote element.</p>
+                                        <p class="text-end fs-6 fst-italic text-secondary">11/09/2024 09:24am</p>
+                                    </blockquote>
                                 </div>
                             </div>
                         </div>
@@ -163,8 +206,11 @@
                 }
             }
         }
-        </script>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
