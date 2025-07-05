@@ -1,0 +1,114 @@
+/* === Global Reset & Typography === */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Rajdhani", sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #f9f9ff;
+  overflow-x: hidden;
+}
+
+/* === Labels === */
+label {
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+/* === Signin / Signup Form Styling === */
+.signContainer {
+  background-color: #ffffff;
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 100%;
+  margin: auto;
+  box-shadow: 0 6px 24px rgba(66, 68, 90, 0.3);
+  transition: 0.3s ease-in-out;
+}
+
+.signContainer > h1 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: 600;
+  color: #333;
+}
+
+.signContainer > form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.signContainer div {
+  display: flex;
+  flex-direction: column;
+}
+
+.signContainer input {
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-bottom: 1.5px solid #555;
+  background: transparent;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.signContainer input::placeholder {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: #aaa;
+}
+
+.signContainer input:focus {
+  border-bottom: 2px solid purple;
+}
+
+/* === Buttons === */
+button {
+  background-color: purple;
+  color: #fff;
+  border: none;
+  font-size: 1.1rem;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: darkmagenta;
+}
+
+/* === Scrollable User List === */
+.userList {
+  max-height: 220px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  scrollbar-color: rebeccapurple lightblue;
+  scrollbar-width: thin;
+}
+
+/* === Logo / Title Heading === */
+.lg {
+  color: white;
+  font-size: 2em;
+  font-family: "Arial Black", Gadget, sans-serif;
+  text-shadow: 1px 1px 0 purple, 0 2px 0 purple, 0 3px 0 purple,
+    0 4px 0 purple, 0 5px 0 purple, 0 6px 0 purple,
+    2px 20px 30px rgba(0, 0, 0, 0.5);
+  letter-spacing: 2px;
+  transition: transform 0.3s ease;
+}
+
+.lg:hover {
+  transform: scale(1.05);
+}

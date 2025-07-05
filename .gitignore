@@ -1,0 +1,34 @@
+# === Node Modules ===
+**/node_modules/
+
+# === Logs ===
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# === OS / Editor Files ===
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+*.code-workspace
+
+# === Build Outputs ===
+frontend/build/
+frontend/dist/
+backend/dist/
+backend/build/
+
+# === Optional: Local Data Files ===
+*.local
+*.sqlite
+*.bak
+*.tmp
+
+# === Coverage Reports ===
+coverage/
+*.lcov
