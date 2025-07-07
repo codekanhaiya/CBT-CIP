@@ -100,7 +100,7 @@ CBT-CIP
   
   1. Clone the repository:
 ``` bash  
-git clone https://github.com/your-username/internship-mern-app.git
+git clone https://github.com/codekanhaiya/CBT-CIP.git
 cd internship-mern-app
 ```
 
